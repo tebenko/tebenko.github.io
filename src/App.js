@@ -61,7 +61,7 @@ function MainPage() {
                 <ScrollDownArrow goto={gotoPage} page={1}/>
             </section>
             <section className="page page2" ref={pages[1]}>
-                <div className="image"><div/></div>
+                <div className="image image2"><div/></div>
                 <div className="content">
                     <h1>Мої пріоритети</h1>
                     <p>Ми з командою бачимо проблему онлайн-іміджу ліцею та учнів як частини цієї персони. Бажаємо покращити її шляхом переробки сайта ліцею та його соціальних сторінок, полегшення зв'язку між учнями. Наші вміння, наприклад, демонструє сторінка, на яку ви дивитеся ;)</p>
@@ -80,7 +80,7 @@ function MainPage() {
                 <ScrollDownArrow goto={gotoPage} page={3}/>
             </section>
             <section className="page page4" ref={pages[3]}>
-                <div className="image"><div/></div>
+                <div className="image image4"><div/></div>
                 <div className="content">
                     <h1>Моя програма</h1>
                     <p>Ми запланували ще багато чого, наприклад події: кіновечори, тематичні дні, дебати, колаби з науковими та волонтерськими організаціями, створимо гуртки та тому подібне</p>
