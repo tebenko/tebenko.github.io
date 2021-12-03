@@ -53,9 +53,9 @@ function MainPage() {
             <section className="page page1" ref={pages[0]}>
                 <div className="image bg image1"><div/></div>
                 <div className="content">
-                    <h1>Heading</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa commodi sequi voluptatum. Eligendi, ipsum quidem dolor numquam perferendis dolore libero impedit vitae adipisci, quam quae corrupti cumque soluta, molestiae rerum.</p>
-                    <Link className="more" to="/about">Read more &gt;&gt;&gt;</Link>
+                    <h1>Про мене</h1>
+                    <p>Я - Тебенько Ярема, учень 10-В класу ЛФМЛ. Організовував не одну подію чи табір, працюючи з різноманітними людьми. Хочу стати головою учнівського самоврядування аби створити у ліцеї прекрасну атмосферу, у якій приємно навчатись і перебувати.</p>
+                    <Link className="more" to="/about">Більше про мене &gt;&gt;&gt;</Link>
                 </div>
                 <div className="splitter curve1"></div>
                 <ScrollDownArrow goto={gotoPage} page={1}/>
@@ -63,29 +63,28 @@ function MainPage() {
             <section className="page page2" ref={pages[1]}>
                 <div className="image"><div/></div>
                 <div className="content">
-                    <h1>Heading</h1>
-                    <p>Illum excepturi nobis eveniet ipsam tenetur doloribus quidem distinctio quod voluptatum, aut, quaerat soluta. Sapiente sed, maiores excepturi eveniet numquam quia illo praesentium fuga exercitationem rerum, vitae ipsa non? At.</p>
-                    <Link className="more" to="/point1">Read more &gt;&gt;&gt;</Link>
+                    <h1>Мої пріоритети</h1>
+                    <p>Ми з командою бачимо проблему онлайн-іміджу ліцею та учнів як частини цієї персони. Бажаємо покращити її шляхом переробки сайта ліцею та його соціальних сторінок, полегшення зв'язку між учнями. Наші вміння, наприклад, демонструє сторінка, на яку ви дивитеся ;)</p>
+                    <Link className="more" to="/online">Детальніше &gt;&gt;&gt;</Link>
                 </div>
                 <div className="splitter curve2"></div>
                 <ScrollDownArrow goto={gotoPage} page={2}/>
             </section>
             <section className="page page3" ref={pages[2]}>
                 <div className="content">
-                    <h1>Heading</h1>
-                    <p>Corrupti voluptates corporis deleniti tenetur eaque accusamus minus officia voluptatem tempora adipisci eum earum deserunt iure, soluta accusantium. Laboriosam reiciendis impedit architecto possimus laborum nam ipsum corrupti deleniti nesciunt quia?</p>
-                    <Link className="more" to="/point2">Read more &gt;&gt;&gt;</Link>
+                    <h1>Нам важлива ваша думка</h1>
+                    <p>Мені було б дуже приємно почути від вас фідбек. Зв'язатися можна на діскорд-сервері моєї команди (посилання поруч), або пишіть мені на цей номер: +38 068 636 0930</p>
                 </div>
-                <div className="image"><div/></div>
+                <div className="image"><div class="invite"><div class="invite_name"><img alt="" src="assets/logo64.png" /><div><h1>Кампанія Яреми</h1><span>Сервер моєї команди</span></div></div><a href="https://discord.gg/TPqx3Z4pez" class="join">Приєднатися</a></div></div>
                 <div className="splitter curve3"></div>
                 <ScrollDownArrow goto={gotoPage} page={3}/>
             </section>
             <section className="page page4" ref={pages[3]}>
                 <div className="image"><div/></div>
                 <div className="content">
-                    <h1>Heading</h1>
-                    <p>Sequi voluptate necessitatibus officiis, at sapiente ratione, et aperiam quasi perspiciatis impedit voluptatum mollitia. Ad nisi, provident magni earum sit quasi eveniet cumque totam itaque placeat. Obcaecati inventore fugit ipsum.</p>
-                    <Link className="more" to="/plans">Read more &gt;&gt;&gt;</Link>
+                    <h1>Моя програма</h1>
+                    <p>Ми запланували ще багато чого, наприклад події: кіновечори, тематичні дні, дебати, колаби з науковими та волонтерськими організаціями, створимо гуртки та тому подібне</p>
+                    <Link className="more" to="/plans">Конкретніше &gt;&gt;&gt;</Link>
                 </div>
                 <div className="splitter curve4"></div>
             </section>
@@ -99,6 +98,8 @@ function App() {
             <Routes>
                 <Route exact path="/" element={<MainPage />} />
                 <Route exact path="/about" element={<Article url="/articles/about.md" />} />
+                <Route exact path="/online" element={<Article url="/articles/online.md" />} />
+                <Route exact path="/plans" element={<Article url="/articles/plans.md" />} />
             </Routes>
         </Router>
         );

@@ -134,6 +134,69 @@
             width: 100%;
             border-radius: 0.5rem;
             box-shadow: 0.25rem 0.25rem 0.25rem $nord1;
+
+            &.invite {
+                font-family: 'Oswald', sans-serif;
+                aspect-ratio: unset;
+                padding: 1rem;
+                padding-bottom: 2rem;
+                div {
+                    background-image: none;
+                    box-shadow: none;
+                }
+                border: solid $nord4 2px;
+                background: $nord0;
+                display: flex;
+                flex-direction: column;
+                width: max-content;
+                height: max-content;
+
+                .invite_name {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-items: end;
+                    height: calc(64px + 1rem);
+                    aspect-ratio: unset;
+
+                    img {
+                        border-radius: 50%;
+                        margin: 0.5rem;
+                    }
+
+                    div {
+                        height: calc(64px + 1rem);
+                        min-width: 12rem;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: flex-start;
+
+                        h1 {
+                            margin: 0;
+                            color: $nord4;
+                        }
+
+                        span {
+                            font-family: 'Lexend', sans-serif;
+                            color: $nord7;
+                        }
+                    }
+                }
+
+                .join {
+                    text-decoration: none;
+                    background: $nord14;
+                    color: $nord6;
+                    border-radius: 1rem;
+                    padding: 1rem;
+                    box-shadow: 0.125rem 0.125rem 0.125rem #000;
+                    margin-left: 1rem;
+                    margin-right: 1rem;
+                    display: flex;
+                    justify-content: center;
+                }
+            }
         }
         div {
             background-image: url("https://picsum.photos/1920/1080");
