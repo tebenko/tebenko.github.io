@@ -29,6 +29,7 @@ jobs:
           find . -mindepth 1 -name build -prune -o -name .git -prune -o -type d -print | xargs rm -rf
           mv build/* .
           rm -rf build
+          cp index.html 404.html
     - name: commit the changes
       run: |
           git add .
