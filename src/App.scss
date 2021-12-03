@@ -161,7 +161,8 @@
     &.page1 {
 //        background-color: $nord1;
         background-image: url("curves/background.svg");
-        background-size: contain;
+        background-size: cover;
+        background-repeat: no-repeat;
 
         .content {
             border: solid $nord4 1px;
