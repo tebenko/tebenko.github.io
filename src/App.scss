@@ -198,9 +198,6 @@
                 }
             }
         }
-        div {
-            background-image: url("https://picsum.photos/1920/1080");
-        }
         &.bg{
             position: absolute;
             margin: 0;
@@ -220,6 +217,9 @@
         }
         &.image2 div {
             background-image: url("assets/socialmess.png");
+        }
+        &.image4 div {
+            background-image: url("assets/lpml.png");
         }
     }
 
